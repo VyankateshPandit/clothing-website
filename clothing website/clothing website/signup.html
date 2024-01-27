@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up</title>
+
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&display=swap');
+
+
+*{
+
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+
+body{
+font-family: 'Bodoni Moda', serif;
+font-size: 1.2rem;background-image: url("2202_w046_n004_50a_p1_50.jpg");
+background-size: cover;
+}
+
+
+
+     .container{ 
+        background: linear-gradient(to right, rgb(180, 213, 245) 0%, rgb(201, 171, 230) 100%);
+        box-shadow: 0px 0px 1px rgb(78, 77, 77);
+
+                   height: 562px;
+                   width: 400px;
+                   position: relative;
+                   left: 460px;
+                   gap: 10px;
+     }
+
+     .ele{        position: relative;
+        top: 30px;
+                    display: flex;
+                   align-items: center;
+                   flex-direction: column;
+                
+     }
+
+     h1{
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+     }
+        input{
+                    height: 50px;
+                    width: 300px;
+                    border: none;
+                    border-radius: 10px;
+                    margin-bottom: 30px;
+        }
+
+        input[type="text"]{
+                              color: black;
+                              font-size: 1.1rem;
+                              padding-left: 10px;
+
+
+        }
+
+         #signinbtn{    background-color: rgba(255, 255, 255, 0.801);
+                transition: all 0.2s ease-in-out;
+
+         }
+         #signinbtn[value="Sign Up"]{
+                    font-size: large;
+                    width: 100px;
+                    position: relative;
+                    left: 100px;
+                     
+         }
+
+
+         #signinbtn:hover{
+            transform: translateY(-5px);
+       background-color: #131212;
+       color: white;
+       border-radius: 10px;
+     
+         }
+
+        ::placeholder{ 
+
+             font-size: 1rem;
+             padding-left: 10px;
+
+        }
+
+     </style>
+
+
+
+</head>
+<body>
+ 
+
+
+
+
+    <div class="container">
+
+        <div class="ele">
+
+            <h1> Sign Up </h1>
+            <form action="signup.php" method="post">
+
+            <input type="text" placeholder="Enter Your Full Name" name="name" required oninvalid="this.setCustomValidity('Enter Your Name')">
+             <br>
+           
+
+            <input type="text" placeholder="Enter Your Gmail" name="email" required oninvalid="this.setCustomValidity('Enter email address')">
+             <br> 
+             <input type="text" placeholder="Create Password" name="password" required oninvalid="this.setCustomValidity('Enter Password')">
+            <br>
+            <input type="text" placeholder="Confirm Password" name="c_password" required oninvalid="this.setCustomValidity('Enter Password')">
+            <br>
+ 
+             <input id="signinbtn" type="submit" value="Sign Up">
+
+            </form>
+
+        </div>
+       
+
+
+    </div>
+    
+       
+
+</body>
+</html>
